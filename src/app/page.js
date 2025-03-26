@@ -1,7 +1,9 @@
 import BackgroundPaths from "@/components/background-paths";
 import Skills from "@/components/skills";
+import ChatIa from "@/components/chat-ia";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import "../app/styles.css";
+
 
 export default function Home() {
   const testimonials = [
@@ -48,13 +50,15 @@ export default function Home() {
               Contactame
             </button>
           </div>
-          <div className="font-bold underline  items-center hidden md:flex">
-            +57 3053907367
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/1920px-Flag_of_Colombia.svg.png"
-              alt="Bandera de Colombia"
-              className="ml-2 w-6 h-4"
-            />
+          <div className="font-bold underline items-center hidden md:flex">
+            <a href="tel:+573053907367" className="flex items-center">
+              +57 3053907367
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/1920px-Flag_of_Colombia.svg.png"
+                alt="Bandera de Colombia"
+                className="ml-2 w-6 h-4"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -64,18 +68,7 @@ export default function Home() {
       <div>
         <Skills />
       </div>
-      <div className="fixed z-50 bottom-10 left-1/2 transform -translate-x-1/2 backdrop-blur-[14px] bg-[#0d0d0db3] border border-[#3e3e3e] rounded-4xl px-3 py-3 text-white w-full md:w-auto max-w-[90%]">
-        <div className="relative flex justify-between items-center space-x-8">
-          <p className="text-white md:text-xl text-base ml-6">Sobre mi</p>
-          <p className="text-[#ffffff6b] md:text-xl text-base">Mis proyectos</p>
-          <div className="rounded-3xl bg-[#272727] p-4 flex justify-center items-center space-x-2 md:pl-6">
-            <p className="text-sm  hidden md:block">Hablar con..</p>
-            <div className="rounded-full w-10 h-10 bg-white flex justify-center items-center">
-              <img src="/icon-send.png" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <ChatIa />
       <div className="flex flex-col justify-center items-center">
         <h1 className="font-bold">Mi red</h1>
         <InfiniteMovingCards
@@ -84,17 +77,17 @@ export default function Home() {
           speed="slow"
         />
       </div>
-      <div className="flex flex-col justify-center items-center pb-40">
-        <h1 className="font-bold text-[#0000005c] text-3xl">Danielrf.com</h1>
+      <div className="flex flex-col justify-center items-center pb-40 pt-40">
+        <h1 className="font-bold text-[#000000] text-3xl">Danielrf.com</h1>
         <div className="mt-2 space-x-2">
-          <button className="px-2 py-2 border border-neutral-600 rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
-          <img src="/instagram.svg" />
+          <button className="px-2 py-2 border border-neutral-600 rounded-xl cursor-pointer font-bold transform hover:-translate-y-1 transition duration-400">
+            <img src="/brand-instagram.svg" />
           </button>
-          <button className="px-2 py-2 border border-neutral-600 rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
-          <img src="/linkedin.svg" />
+          <button className="px-2 py-2 border border-neutral-600 rounded-xl cursor-pointer font-bold transform hover:-translate-y-1 transition duration-400">
+            <img src="/brand-linkedin.svg" />
           </button>
-          <button className="px-2 py-2 border border-neutral-600 rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
-          <img src="/github.svg" />
+          <button className="px-2 py-2 border border-neutral-600 rounded-xl cursor-pointer font-bold transform hover:-translate-y-1 transition duration-400">
+            <img src="/brand-github.svg" />
           </button>
         </div>
       </div>

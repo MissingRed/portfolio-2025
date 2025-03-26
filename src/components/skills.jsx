@@ -2,7 +2,7 @@
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import Image from "next/image";
 
-export default function HeroScrollDemo() {
+export default function Skills() {
   return (
     <div className="flex flex-col overflow-hidden">
       <ContainerScroll
